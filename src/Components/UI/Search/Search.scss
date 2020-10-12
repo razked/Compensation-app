@@ -1,0 +1,40 @@
+@import "../../../Styles/colors.scss";
+
+.SearchWrapper {
+  width: 100%;
+  
+  position: relative;
+
+  .icon {
+    position: absolute;
+    bottom: 28%;
+    left: 5%;
+    width: 1.8rem;
+    height: auto;
+    opacity: .7;
+  }
+
+  .Search {
+    // height: 100%;
+    background-color: transparent;
+    // border: none;
+    width: 100%;
+    border: 1px solid $subText;
+    color: #222222;
+    transition: border 0.2s ease;
+    // padding-left: 2rem;
+    padding: .8rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $orange;
+      transition: border 0.2s ease;
+    }
+
+    &::placeholder {
+      color: $darkSubText;
+    }
+  }
+}

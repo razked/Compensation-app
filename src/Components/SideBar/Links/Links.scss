@@ -1,0 +1,44 @@
+@import "../../../Styles/colors.scss";
+
+.Links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
+  //   padding-right: 2rem;
+
+  a {
+    text-decoration: none;
+    color: $darkSubText;
+    transition: color 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3.5rem;
+    gap: 2.5rem;
+
+    // .link-text {
+    //     font-size: 1.4rem;
+    // }
+
+    .indicator {
+      width: 6px;
+      height: 100%;
+      background-color: $bg;
+      display: block;
+      border-top-left-radius: 10rem;
+      border-bottom-left-radius: 10rem;
+    }
+
+    &.activeLink {
+      color: $text;
+      font-weight: 600;
+      transition: color 0.2s ease;
+
+      .indicator {
+        background-color: $orange; 
+    }
+    }
+  }
+}

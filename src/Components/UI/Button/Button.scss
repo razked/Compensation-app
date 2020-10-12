@@ -1,0 +1,85 @@
+@import "../../../Styles/colors.scss";
+
+.appButton {
+  display: block !important;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: $orange;
+//   box-shadow: 2px 2px 3px $appBorder;
+  color: white;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  // width: 20rem;
+  cursor: pointer;
+  transition: all 0.7s ease;
+  @media print {   
+    display: none;
+}
+
+  &:hover {
+    transition: all 0.7s ease;
+    box-shadow: none;
+    background: darken($orange, 8)
+  }
+
+  // &.redBtn {
+  //   background-image: linear-gradient(to left, $redBG, $redBGLight) !important;
+  //   color: $redText !important;
+  //   font-weight: 600 !important;
+  //   @media print {   
+  //     display: none !important;
+  // }
+  // }
+
+  // &.greenBtn {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     $greenBG,
+  //     $greenBGLight
+  //   ) !important;
+  //   color: $green !important;
+  //   font-weight: 700 !important;
+  //   @media print {   
+  //     display: none;
+  // }
+  // }
+
+  // &.yellowBtn {
+  //   background-image: linear-gradient(
+  //     to left,
+  //     $yellowBG,
+  //     $yellowBG
+  //   ) !important;
+  //   color: $yellow;
+  //   font-weight: 700 !important;
+  //   @media print {   
+  //     display: none !important;
+  // }
+  // }
+
+  // &.fullBtn {
+  //   width: 100%;
+  //   border-radius: 5px;
+  //   height: 4rem;
+  //   font-size: 1.8rem;
+  //   @media print {   
+  //     display: none;
+  // }
+  // }
+
+  // &.fullBtn-outline {
+  //   width: 100%;
+  //   border-radius: 5px;
+  //   height: 4rem;
+  //   font-size: 1.8rem;
+  //   background-image: none;
+  //   background-color: white;
+  //   color: $purpleBG;
+  //   border: 2px solid $purpleBG;
+  //   @media print {   
+  //     display: none;
+  // }
+  // }
+}

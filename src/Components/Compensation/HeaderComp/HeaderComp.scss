@@ -1,0 +1,18 @@
+.HeaderComp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-actions {
+      display: flex;
+      flex-direction: row;
+    //   justify-content: flex-end;
+      align-items: flex-end;
+      gap: 2rem;
+
+      .appButton {
+        width: 17rem;
+      }
+    }
+  }

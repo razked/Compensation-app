@@ -1,0 +1,20 @@
+@import '../Styles/colors.scss';
+
+.basicLayout {
+    width: 100%;
+    // padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.component {
+    border-radius: 10px;
+    background-color: $bg;
+    padding: 2rem;
+    border: 1px solid $border;
+}
