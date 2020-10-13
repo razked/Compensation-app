@@ -1,0 +1,99 @@
+@import "../../../styles/colors.scss";
+
+.WrapperInput {
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    transition: all.3s ease;
+    // margin-bottom: 1.5rem;
+    width: 100%;
+
+    label {
+        cursor: text;
+        transition: all 0.3s ease;
+        
+    }
+
+    .form-input + label {
+        position: absolute;
+        top: 8px;
+        right: 1%;
+        font-size: 120%;
+        transform: translateY(0);
+        z-index: 3;
+        padding: 0 1rem;
+        // background: white;
+        color: $darkSubText;
+        font-weight: 600;
+        transition: all 0.3s ease; 
+
+        // &.LTR + label {
+
+        // }
+    }
+
+    .form-input {
+        height: 5rem;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+        padding-top: 1.5rem;
+        color: #222222;
+        opacity: 1;
+        font-size: 1.5rem;
+        border: none;
+        border: 2px solid $subText;
+        border-radius: 5px;
+        background-color: transparent;
+        z-index: 2;
+        transition: all 0.3s ease;
+        // width: 100%;
+
+        &:focus {
+            border: none;
+            border: 2px solid $orange;
+            z-index: 1;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        &:placeholder-shown + label {
+            transform: translateY(35%);
+            color: $darkSubText;
+            font-size: 1.6rem;
+            transition: all 0.3s ease;
+            font-weight: 400;
+            padding-right: 1rem;
+        }
+
+        &:focus + label {
+            font-size: 120%;
+            transform: translateY(0);
+            color: $darkSubText;
+            // color: $placeHolder;
+            outline: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            // background: white;
+        }
+    }
+
+    .errorEmpty {
+        opacity: 0;
+        height: 0;
+        transition: all 0.5s ease;
+    }
+
+    .errorMessage {
+        opacity: 1;
+        height: 1.5rem;
+        transition: all 0.5s ease-out;
+
+        color: #e83c70;
+        font-size: 1.4rem;
+        padding-right: 1rem;
+        transform: translateY(-0.7rem);
+        font-weight: 500 !important;
+        transition: all 0.4s ease;
+    }
+}

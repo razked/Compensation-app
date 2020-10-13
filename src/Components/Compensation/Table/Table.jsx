@@ -44,7 +44,7 @@ const Table = (props) => {
   let outputRows = null;
   if (!loading && compansation.length > 0) {
     outputRows = compansation
-      .filter((item1) => item1.phone.startsWith(props.searchVal))
+      .filter((item1) => item1.phone.startsWith(props.searchVal) || item1.fullName.startsWith(props.searchVal))
       .map((item, idx) => {
         return (
           <Row

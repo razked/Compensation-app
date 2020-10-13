@@ -33,7 +33,7 @@
     flex-direction: column;
     position: relative;
     animation: animateTop 0.6s;
-    padding: 2rem;
+    padding: 2rem 4rem;
     min-width: 30vw;
     width: max-content;
     max-width: 85vw;
@@ -57,6 +57,7 @@
       font-size: 3.5rem;
       transition: color 0.2s ease;
       z-index: 20;
+      color: #555555;
 
       &:hover {
         color: $error;

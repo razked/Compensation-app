@@ -19,7 +19,7 @@ i18n
           compensation: {
             title: 'מעקב פיצויים',
             btnNew: 'פיצוי חדש',
-            search: 'הקלד טלפון לחיפוש..',
+            search: 'הקלד טלפון או שם לקוח ..',
             date: 'תאריך',
             fullName: 'שם הלקוח',
             phone: 'טלפון',
@@ -32,7 +32,12 @@ i18n
             filterYes: 'מומשו',
             filterNo: 'לא מומשו',
             modalTitleNew: 'הוספת פיצוי חדש',
-            modalTitleEdit: 'עריכת פיצוי'
+            modalTitleEdit: 'עריכת פרטים',
+            modalTitleConfirm: 'אישור קבלת פיצוי',
+            addNewBtn: 'הוספת פיצוי',
+            updateBtn: 'עדכון פרטים',
+            delete: 'מחיקת פיצוי',
+            confirm :"אישור"
           }
         },
       },

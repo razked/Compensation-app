@@ -1,6 +1,8 @@
 @import '../../../Styles/colors.scss';
 
 .compansation-table {
+    // height: 100%;
+    overflow-y: auto;
     .columns {
         display: grid;
         grid-template-columns: 6% repeat(2, 1fr) 15% 20% 20% repeat(2, 1fr);

@@ -33,18 +33,15 @@
   // }
   // }
 
-  // &.greenBtn {
-  //   background-image: linear-gradient(
-  //     to left,
-  //     $greenBG,
-  //     $greenBGLight
-  //   ) !important;
-  //   color: $green !important;
-  //   font-weight: 700 !important;
-  //   @media print {   
-  //     display: none;
-  // }
-  // }
+  &.greenBtn {
+    background: $green;
+  }
+  &.redBtn {
+    background: transparent;
+    color: $error;
+    font-weight: 700 !important;
+    border: 2px solid $error;
+  }
 
   // &.yellowBtn {
   //   background-image: linear-gradient(
